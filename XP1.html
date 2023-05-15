@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*-----------------Exercice1----------------
+//part1
+function infoAboutMe() {
+  console.log("My name is AYA, I'm 19 years old, and my hobbies include reading , swimming and cooking.");
+}
+infoAboutMe();
+
+//part2
+function infoAboutPerson(personName, personAge, personFavoriteColor) {
+  console.log("Your name is " + personName + ", you are " + personAge + " years old, and your favorite color is " + personFavoriteColor + ".");
+}
+
+infoAboutPerson("David", 45, "blue");
+infoAboutPerson("Josh", 12, "yellow");
+--------------------Exercice2---------------
+function calculateTip() {
+ 
+  let  Amount = parseFloat(prompt("entrer le montant de la facture:"));
+  let  tipPercentage;
+  if (Amount < 50) {
+    tipPercentage = 0.2;
+  } else if (Amount >= 50 && Amount <= 200) {
+    tipPercentage = 0.15; 
+  } else {
+    tipPercentage = 0.1; 
+  }
+
+ 
+  let  tipAmount = Amount * tipPercentage;
+  let  finalBill = Amount + tipAmount;
+
+  
+  console.log("Tip amount: $" + tipAmount.toFixed(2));
+  console.log("Final bill: $" + finalBill.toFixed(2));
+}
+
+calculateTip();
+---------------------Exercice3-------------------
+function isDivisible() {
+  let sum = 0;
+
+  for (let i = 0; i <= 500; i++) {
+    if (i % 23 === 0) {
+      console.log(i);
+      sum += i;
+    }
+  }
+
+  console.log("Sum:", sum);
+}
+
+isDivisible();
+--------------------Exercice4-----------------------
+const stock = {
+  "banana": 6,
+  "apple": 0,
+  "pear": 12,
+  "orange": 32,
+  "blueberry": 1
+};
+
+const prices = {
+  "banana": 4,
+  "apple": 2,
+  "pear": 1,
+  "orange": 1.5,
+  "blueberry": 10
+};
+
+const shoppingList = ["banana", "orange", "apple"];
+
+function myBill() {
+  let totalPrice = 0;
+
+  for (let i = 0; i < shoppingList.length; i++) {
+    const item = shoppingList[i];
+
+    if (item in stock && stock[item] > 0) {
+      totalPrice += prices[item];
+    }
+  }
+
+  return totalPrice;
+}
+
+const bill = myBill();
+console.log("Total bill:", bill);
+---------------------------Exercice5-----------------------
+function changeEnough(itemPrice, amountOfChange) {
+  const quarters = amountOfChange[0] * 0.25;
+  const dimes = amountOfChange[1] * 0.10;
+  const nickels = amountOfChange[2] * 0.05;
+  const pennies = amountOfChange[3] * 0.01;
+
+  const totalChange = quarters + dimes + nickels + pennies;
+
+  return totalChange >= itemPrice;
+}
+
+const itemPrice = 2.15;
+const amountOfChange = [2, 0, 1, 3];
+const canAfford = changeEnough(itemPrice, amountOfChange);
+console.log("Can afford:", canAfford)*/
+
+
+    </script>
+</body>
+</html>
