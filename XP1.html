@@ -110,7 +110,76 @@ function changeEnough(itemPrice, amountOfChange) {
 const itemPrice = 2.15;
 const amountOfChange = [2, 0, 1, 3];
 const canAfford = changeEnough(itemPrice, amountOfChange);
-console.log("Can afford:", canAfford)*/
+console.log("Can afford:", canAfford)
+*-----------------Exercice6----------------
+// Function to calculate hotel cost
+function hotelCost() {
+  var nights = prompt("combien de temps vous allez resté dans l'hotel?");
+  
+  if (nights === null || isNaN(nights)) {
+    return hotelCost(); 
+  }
+  
+  var totalCost = 140 * parseInt(nights);
+  return totalCost;
+}
+
+
+function planeRideCost() {
+  var destination = prompt("Veuillez sasir votre destiniation (London, Paris, or other):");
+  
+  if (destination === null || typeof destination !== "string") {
+    return planeRideCost();
+  }
+  
+  var price;
+  
+  switch (destination.toLowerCase()) {
+    case "london":
+      price = 183;
+      break;
+    case "paris":
+      price = 220;
+      break;
+    default:
+      price = 300;
+  }
+  
+  return price;
+}
+
+function rentalCarCost() {
+  var days = prompt("How many days would you like to rent the car?");
+  
+  if (days === null || isNaN(days)) {
+    return rentalCarCost(); 
+  }
+  
+  var totalCost = 40 * parseInt(days);
+  
+  if (parseInt(days) > 10) {
+    totalCost *= 0.95; 
+  }
+  
+  return totalCost;
+}
+
+// Function to calculate total vacation cost
+function totalVacationCost() {
+  var hotelCost = hotelCost();
+  var planeRideCost = planeRideCost();
+  var rentalCarCost = rentalCarCost();
+  
+  var totalCost = hotelCost + planeRideCost + rentalCarCost;
+  
+  console.log("The hotel cost: $" + hotelCost);
+  console.log("The plane tickets cost: $" + planeRideCost);
+  console.log("The car rental cost: $" + rentalCarCost);
+  console.log("The total vacation cost is: $" + totalCost);
+}
+
+
+totalVacationCost();*/
 
 
     </script>
