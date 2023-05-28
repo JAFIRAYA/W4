@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+      /*
 function bottlesOfBeer(count) {
   for (let i = count; i > 0; i--) {
     let bottles = i === 1 ? "bottle" : "bottles";
@@ -28,7 +29,20 @@ function bottlesOfBeer(count) {
 }
 
 const count = parseInt(prompt("Enter the number of bottles to start:"));
-bottlesOfBeer(count);
+bottlesOfBeer(count);*/
+
+let nbBeer=prompt("Entre le nombre de beers")
+
+let beer=nbBeer
+
+for(let i=0;i<Number(beer);i++){
+  beer=beer-1
+  if(beer<0){
+    console.log(`pas de bouteille de bière sur le mur`)
+    break
+  }
+  console.log(beer)
+}
 
 
     </script>
